@@ -17,4 +17,6 @@ jobs:
       - name: listing files in repository
         run: ls -l
       - name: aws cli version
-        run: aws --version   
+        run: aws --version
+      - name: code updation
+        run: aws lambda update-function-code --function-name GithubWebhook --zip-file fileb://python.zip   
